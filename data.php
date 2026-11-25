@@ -5,7 +5,9 @@
         if($_SERVER['REQUEST_METHOD']=="POST"){
             $username = $_POST['email'];
             $pass = $_POST['password'];
-            if($username == 'admin@example.com' && $pass == 'change-me')
+            $adminEmail = getenv('ADMIN_EMAIL') ?: 'admin@example.com';
+            $adminPass = getenv('ADMIN_PASSWORD') ?: 'change-me';
+            if(hash_equals($adminEmail, (string)$username) && hash_equals($adminPass, (string)$pass))
                 header('Location: ./admin.php');
             else
                 header('Location: ./index.php?error=invalid&credentials');

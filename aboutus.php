@@ -18,7 +18,7 @@
 <body>
     <nav class="navbar navbar-expand-sm fixed-top navbar-dark">
         <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand align-self-center" href=""><img src="img/logo.png" height="30" width="41" alt=""></a>
@@ -107,12 +107,12 @@
                     <div class="card">
                         <div class="card-header" role="tab" id="peterhead">
                             <h3 class="mb=0">
-                                <a data-toggle="collapse" data-target="#peter" href="">
+                                <a data-bs-toggle="collapse" data-bs-target="#peter" href="">
                                     Peter Pan <small>Chief Epicurious Officer</small>
                                 </a>
                             </h3>
                         </div>
-                        <div class="collapse show" id="peter" data-parent="#accordion">
+                        <div class="collapse show" id="peter" data-bs-parent="#accordion">
                             <div class="card-body">
                                 <p>Our CEO, Peter, credits his hardworking East Asian immigrant parents who undertook the arduous journey to the shores of America with the intention of giving their children the best future. His mother's wizardy in the kitchen whipping up the tastiest dishes with whatever is available inexpensively at the supermarket, was his first inspiration to create the fusion cuisines for which <em>The Frying Pan</em> became well known. He brings his zeal for fusion cuisines to this restaurant, pioneering cross-cultural culinary connections.</p>
                             </div>
@@ -122,12 +122,12 @@
                     <div class="card">
                         <div class="card-header" role="tab" id="dannyhead">
                             <h3 class="mb=0">
-                                <a data-toggle="collapse" data-target="#danny" href="">
+                                <a data-bs-toggle="collapse" data-bs-target="#danny" href="">
                                     Dhanasekaran Witherspoon <small>Chief Food Officer</small>
                                 </a>
                             </h3>
                         </div>
-                        <div class="collapse" id="danny" data-parent="#accordion">
+                        <div class="collapse" id="danny" data-bs-parent="#accordion">
                             <div class="card-body">
                                 <p>Our CFO, Danny, as he is affectionately referred to by his colleagues, comes from a long established family tradition in farming and produce. His experiences growing up on a farm in the Australian outback gave him great appreciation for varieties of food sources. As he puts it in his own words, <em>Everything that runs, wins, and everything that stays, pays!</em></p>    
                             </div>
@@ -137,12 +137,12 @@
                     <div class="card">
                         <div class="card-header" role="tab" id="agumbehead">
                             <h3 class="mb=0">
-                                <a data-toggle="collapse" data-target="#agumbe" href="">
+                                <a data-bs-toggle="collapse" data-bs-target="#agumbe" href="">
                                     <h3>Agumbe Tang <small>Chief Taste Officer</small></h3>
                                 </a>
                             </h3>
                         </div>
-                        <div class="collapse" id="agumbe" data-parent="#accordion">
+                        <div class="collapse" id="agumbe" data-bs-parent="#accordion">
                             <div class="card-body">
                                 <p>Blessed with the most discerning gustatory sense, Agumbe, our CTO, personally ensures that every dish that we serve meets his exacting tastes. Our chefs dread the tongue lashing that ensues if their dish does not meet his exacting standards. He lives by his motto, <em>You click only if you survive my lick.</em></p>    
                             </div>
@@ -152,12 +152,12 @@
                     <div class="card">
                         <div class="card-header" role="tab" id="albertohead">
                             <h3 class="mb=0">
-                                <a data-toggle="collapse" data-target="#alberto" href="">
+                                <a data-bs-toggle="collapse" data-bs-target="#alberto" href="">
                                     <h3>Alberto Somayya <small>Executive Chef</small></h3>
                                 </a>
                             </h3>
                         </div>
-                        <div class="collapse" id="alberto" data-parent="#accordion">
+                        <div class="collapse" id="alberto" data-bs-parent="#accordion">
                             <div class="card-body">
                                 <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, <em>Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!</em></p>    
                             </div>
@@ -253,5 +253,4 @@
 
 </html>
 <script src="node_modules/jquery/dist/jquery.slim.min.js" type="text/javascript"></script>
-<script src="node_modules/popper.js/dist/umd/popper.min.js" type="text/javascript"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" type="text/javascript"></script>
