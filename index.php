@@ -18,7 +18,7 @@
 <body>
     <nav class="navbar navbar-expand-sm fixed-top navbar-dark">
         <div class="container">
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#Navbar">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand align-items-center" href=""><img src="img/logo.png" height="30" width="41" alt=""></a>
@@ -30,7 +30,7 @@
                     <li class="nav-item"><a class="nav-link" href="contactus.php"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
                 </ul>
                 <div class="navbar-text ml-auto mt-auto">
-                    <a class="nav-link pl-0" data-toggle="modal" data-target="#LoginModal" href=""><span class="fa fa-sign-in fa-lg"></span> Admin Login</a>
+                    <a class="nav-link pl-0" data-bs-toggle="modal" data-bs-target="#LoginModal" href=""><span class="fa fa-sign-in fa-lg"></span> Admin Login</a>
                 </div>
             </div>
         </div>
@@ -41,7 +41,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Login</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form class="form" action="data.php" method="POST">
@@ -61,7 +61,7 @@
                         </div>
                         <div class="form-group row justify-content-end">
                             <button type="submit" class="btn btn-primary">Signin</button>
-                            <button type="dismiss" class="btn btn-secondary mx-2" data-dismiss="modal">Cancel</button>
+                            <button type="dismiss" class="btn btn-secondary mx-2" data-bs-dismiss="modal">Cancel</button>
                         </div>
                     </form>
                 </div>
@@ -84,7 +84,7 @@
                             <img class="img-fluid" src="img/logo.png" alt="">
                         </div>
                         <div class="col-12 col-sm-6 align-self-center">
-                            <a class="btn d-block btn-warning" data-toggle="modal" data-target="#restable">Reserve</a>
+                            <a class="btn d-block btn-warning" data-bs-toggle="modal" data-bs-target="#restable">Reserve</a>
                         </div>
                     </div>
                 </div>
@@ -97,7 +97,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Reserve a Table</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="container">
@@ -133,7 +133,7 @@
                                 <label for="smoke" class="form-input-label">Section</label>
                             </div>
                             <div class="col col-sm-8">
-                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <div class="btn-group btn-group-toggle" data-bs-toggle="buttons">
                                     <label class="btn btn-success active">
                                       <input type="radio" name="Smoke" value="No-Smoking" id="option1" autocomplete="off" checked>Non Smoking
                                     </label>
@@ -159,7 +159,7 @@
                         </div>
                         <div class="form-group row">
                             <div class="col-6 offset-sm-2">
-                                <button type="dismiss" class="btn btn-secondary active" data-dismiss="modal">Cancel</button>
+                                <button type="dismiss" class="btn btn-secondary active" data-bs-dismiss="modal">Cancel</button>
                                 <button class="btn btn-primary" type="submit" id="rSubmit">Reserve</button>
                                 <div class="d-inline" id="success" style="color: green;">Success</div>
                             </div>
@@ -175,15 +175,15 @@
     <div class="container">
         <div class="row row-content">
             <div class="col-12">
-                <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                <div id="mycarousel" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
                             <img class="d-block img-fluid" src="img/uthappizza.png" alt="uthappizza">
                             <div class="carousel-caption d-none d-md-block">
                                 <h2>
                                     Uthappizza
-                                    <span class="badge badge-danger">HOT</span>
-                                    <span class="badge badge-secondary badge-pill">$4.99</span>
+                                    <span class="badge bg-danger">HOT</span>
+                                    <span class="badge bg-secondary rounded-pill">$4.99</span>
                                 </h2>
                                 <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>        
                             </div>
@@ -192,7 +192,7 @@
                             <img class="d-block img-fluid c-img" src="img/buffet.png" alt="">
                             <div class="carousel-caption d-none d-md-block">
                                 <h2>Weekend Grand Buffet
-                                     <span class="badge badge-danger">NEW</span>
+                                     <span class="badge bg-danger">NEW</span>
                                 </h2>
                                 <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
                             </div>
@@ -207,14 +207,14 @@
                         </div>
                     </div>
                     <ol class="carousel-indicators">
-                        <li data-target="#mycarousel" class="active" data-slide-to="0"></li>
-                        <li data-target="#mycarousel"  data-slide-to="1"></li>
-                        <li data-target="#mycarousel"  data-slide-to="2"></li>
+                        <li data-bs-target="#mycarousel" class="active" data-bs-slide-to="0"></li>
+                        <li data-bs-target="#mycarousel"  data-bs-slide-to="1"></li>
+                        <li data-bs-target="#mycarousel"  data-bs-slide-to="2"></li>
                     </ol>
-                    <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#mycarousel" role="button" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon"></span>
                     </a>
-                    <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#mycarousel" role="button" data-bs-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </a>
                     <button class="btn btn-danger btn-sm" id="carouselButton">
@@ -281,9 +281,8 @@
            </div>
         </div>
     </footer>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/reserve.js"></script>
     <script>
         $(document).ready(function(){

@@ -22,7 +22,7 @@
 <body>
     <nav class="navbar navbar-expand-sm fixed-top navbar-dark">
         <div class="container">
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#Navbar">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand align-items-center" href=""><img src="img/logo.png" height="30" width="41" alt=""></a>
@@ -51,10 +51,10 @@
 
                 <ul class="nav nav-tabs justify-content-center">   
                     <li class="nav-item">
-                        <a class="nav-link active" href="#reserve" role="tab" data-toggle="tab"><h3>Reservation</h3></a>
+                        <a class="nav-link active" href="#reserve" role="tab" data-bs-toggle="tab"><h3>Reservation</h3></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#orders" role="tab" data-toggle="tab"><h3>Orders</h3></a>
+                        <a class="nav-link" href="#orders" role="tab" data-bs-toggle="tab"><h3>Orders</h3></a>
                     </li>
                 </ul>
 
@@ -161,9 +161,8 @@
            </div>
         </div>
     </footer>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/admin.js"></script>
 </body>
 </html>
